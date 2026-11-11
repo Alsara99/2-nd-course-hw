@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <section class="top">
+        <h1 class="top__title">Добро пожаловать <br>на мой сайт мини-игр</h1>
+        <p class="top__subtitle">Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай «Поехали!» и приступай.</p>
+        <a href="#about" class="top__button">Поехали!</a>
+    </section>
+    <section id="about" class="about">
+        <h1 class="about__title">Об играх</h1>
+        <p class="about__subtitle">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>Все игры доступны для пользования.</p>
+        <div class="games">
+            <div class="games_column">
+                <a href="#" class="game game_first">
+                    <img class="game__image" src="./img/game1.png" alt="">
+                    <p class="game__tag">Игра № 1</p>
+                    <h1 class="game__title">Угадай число</h1>
+                </a>
+                <a href="#" class="game game_fourth">
+                    <img class="game__image" src="./img/game4.png" alt="">
+                    <p class="game__tag">Игра № 4</p>
+                    <h1 class="game__title">Камень,<br>ножницы,<br>бумага</h1>
+                </a>
+            </div>
+            <div class="games_column">
+                <a href="#" class="game game_second">
+                    <img class="game__image" src="./img/game2.png" alt="">
+                    <p class="game__tag">Игра № 2</p>
+                    <h1 class="game__title">Простая<br>арифметика</h1>
+                </a>
+                <a href="#" class="game game_fifth">
+                    <img class="game__image" src="./img/game5.png" alt="">
+                    <p class="game__tag">Игра № 5</p>
+                    <h1 class="game__title">Простая<br>викторина</h1>
+                </a>
+            </div>
+            <div class="games_column">
+                <a href="#" class="game game_third">
+                    <img class="game__image" src="./img/game3.png" alt="">
+                    <p class="game__tag">Игра № 3</p>
+                    <h1 class="game__title">Переверни текст</h1>
+                </a>
+                <a href="#" class="game game_sixth">
+                    <img class="game__image" src="./img/game6.png" alt="">
+                    <p class="game__tag">Игра № 6</p>
+                    <h1 class="game__title">Генератор<br>случайных<br>цветов</h1>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
