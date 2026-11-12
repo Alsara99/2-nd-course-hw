@@ -1,0 +1,112 @@
+$font-family: "Montserrat";
+
+body {
+    font-family: $font-family;
+}
+
+input, button, a, select {
+    font-family: $font-family;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top{
+    background-image: url("img/top_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 196px;
+    padding-right: 551px;
+    padding-left: 120px;
+    padding-bottom: 120px;
+    &__title{
+        font-size: 64px;
+    }
+    &__subtitle{
+        font-size: 24px;
+        padding-top: 24px;
+        padding-bottom: 48px;
+    }
+    &__button{
+        background: #202027;
+        border: 1px solid #202027;
+        box-sizing: border-box;
+        border-radius: 60px;
+        color: white;
+        width: 247px;
+        height: 66px;
+        font-size: 24px;
+        padding: 16px 65px 16px 65px;
+        text-decoration: none;
+        transition: 0.7s all;
+        &:hover{
+            color:#202027;
+            background: white;
+        }
+    }
+}
+.about{
+    background-image: url("img/about_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 94px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+    &__title{
+        font-size: 64px;
+    }
+    &__subtitle{
+        font-size: 24px;
+        padding-top: 24px;
+        padding-bottom: 72px;
+    }
+}
+.games{
+    display: flex;
+    gap: 32px;
+    &_column{
+        display: flex;
+        flex-direction: column;
+        gap:32px;
+    }
+}
+.game{
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 36px;
+    transition: 1s all;
+    text-decoration: none;
+    &__image{
+        width: 378px;
+        height: 341px;
+    }
+    &__tag{
+        background-color: #F7F7F7;
+        border-radius: 52.58px;
+        color: #202027;
+        width: 108px;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    &__title{
+        font-size: 32px;
+        color: #202027;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    &:hover{
+        transform: scale(1.07);
+    }
+}
