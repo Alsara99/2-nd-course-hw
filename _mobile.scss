@@ -1,0 +1,44 @@
+@media (max-width: 767px) {
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(img/mobile_top_bg.png);
+        padding: 147px 16px 182px 17px;
+        &__title {
+            padding: 0 40.5px 0 40.5px;
+            text-align: center;
+            font-size: 40px;
+        }
+        &__subtitle {
+            padding: 24px 23.5px 36px 23.5px;
+            text-align: center;
+            font-size: 16px;
+        }
+        &__button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: #202027;
+        border: 1px solid #202027;
+        box-sizing: border-box;
+        border-radius: 60px;
+        color: white;
+        width: 285px;
+        height: 55px;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 16px 65px 16px 65px;
+        text-decoration: none;
+        transition: 0.7s all;
+        &:hover{
+            background:#202027;
+            color: white;
+        }
+    }
+    }
+    .about{
+        display: none;
+    }
+}
