@@ -38,6 +38,7 @@ input, button, a, select {
         width: 247px;
         height: 66px;
         font-size: 24px;
+        font-weight: 600;
         padding: 16px 65px 16px 65px;
         text-decoration: none;
         transition: 0.7s all;
@@ -68,7 +69,7 @@ input, button, a, select {
 .games{
     display: flex;
     gap: 32px;
-    &_column{
+    &__column{
         display: flex;
         flex-direction: column;
         gap:32px;
@@ -109,6 +110,80 @@ input, button, a, select {
     &:hover{
         transform: scale(1.07);
     }
+}
+
+.mini-games {
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/mini-games_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 46px 121px 144px 119px;
+    gap: 50px;
+    &__title {
+        font-size: 64px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+.mini-game {
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 1s all;
+    text-decoration: none;
+    font-size: 24px;
+    &__image {
+        width: 600px;
+        height: 500px;
+    }
+    &__description {
+        color: black;
+        padding-top: 24px;
+        padding-bottom: 36px;
+    }
+    &__title {
+        font-size: 48px;
+        color: #202027;
+        padding-top: 48px;
+    }
+    &__button {
+        background: #202027;
+        border: 1px solid #202027;
+        box-sizing: border-box;
+        border-radius: 60px;
+        color: white;
+        width: 247px;
+        height: 66px;
+        font-weight: 600;
+        padding: 16px 65px 16px 65px;
+        text-decoration: none;
+        transition: 0.7s all;
+        &:hover{
+            color:#202027;
+            background: white;
+        }
+    }
+    &__info {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+.footer {
+    background-image: url("img/footer_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 60px 0 60px 0;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 @import 'mobile';
