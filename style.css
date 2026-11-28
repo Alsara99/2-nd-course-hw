@@ -37,6 +37,7 @@ input, button, a, select {
   width: 247px;
   height: 66px;
   font-size: 24px;
+  font-weight: 600;
   padding: 16px 65px 16px 65px;
   text-decoration: none;
   transition: 0.7s all;
@@ -69,7 +70,7 @@ input, button, a, select {
   display: flex;
   gap: 32px;
 }
-.games_column {
+.games__column {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -110,6 +111,81 @@ input, button, a, select {
 }
 .game:hover {
   transform: scale(1.07);
+}
+
+.mini-games {
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/mini-games_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 46px 121px 144px 119px;
+  gap: 50px;
+}
+.mini-games__title {
+  font-size: 64px;
+}
+.mini-games__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mini-game {
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: 1s all;
+  text-decoration: none;
+  font-size: 24px;
+}
+.mini-game__image {
+  width: 600px;
+  height: 500px;
+}
+.mini-game__description {
+  color: black;
+  padding-top: 24px;
+  padding-bottom: 36px;
+}
+.mini-game__title {
+  font-size: 48px;
+  color: #202027;
+  padding-top: 48px;
+}
+.mini-game__button {
+  background: #202027;
+  border: 1px solid #202027;
+  box-sizing: border-box;
+  border-radius: 60px;
+  color: white;
+  width: 247px;
+  height: 66px;
+  font-weight: 600;
+  padding: 16px 65px 16px 65px;
+  text-decoration: none;
+  transition: 0.7s all;
+}
+.mini-game__button:hover {
+  color: #202027;
+  background: white;
+}
+.mini-game__info {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.footer {
+  background-image: url("img/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 60px 0 60px 0;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 @media (max-width: 767px) {
